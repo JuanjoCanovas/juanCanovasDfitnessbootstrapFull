@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.png">
+    <title>DFitness Portal de Noticias Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light fondoDegrade">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../image/logof.png" alt="Logo D Fitness Index portal de noticias fitness" class="logoHeader">
+                <p class="centrado">DEFITNESS</p>
+            </a>
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- boton hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/articulos.html">ARTICULOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/tienda.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TIENDA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/tienda.html#indumentaria">INDUMENTARIA</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#maquinas">MAQUINAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#suplementos">SUPLEMENTOS</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#equipamientos">EQUIPAMIENTOS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/registracion.html">REGISTRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    v>
+    <!-- Final del menu-->
+    <main>
+        <section>
+            <figure class="contenedorUsuarioRegistrado">
+                <img src="../image/Usuarios-registrados-icon.png" alt="Imagen de acceso para usuarios registrados"
+                    class="imagenUsuarioRegistrado">
+                <figcaption class="parrafoUsuarioRegistrado">Usuarios Registrados</figcaption>
+            </figure>
+        </section>
+        <section class="contenedorDatosContacto bordeArticulo fondoCeleste">
+            <h3>Sino tienes una cuenta regitrate aqui:</h3>
+            <form action="envio.php" method="get">
+                <fieldset class="contenedorDatosContacto">
+                    <legend class="parrafoFomularioContactoLegend">Informacion de Registro</legend>
+                    <label for="nombre" class="parrafoFomularioContacto">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Juan Perez" required>
+                    <label for="email" class="parrafoFomularioContacto">Email:</label>
+                    <input type="email" id="email" placeholder="mail@mail.com" required>
+                    <label for="password" class="parrafoFomularioContacto">Password:</label>
+                    <input type="password" name="clave" id="password" placeholder="Entre 8 a 12 caracteres" required>
+                    <label for="passwordcopy" class="parrafoFomularioContacto">Repite tu Password:</label>
+                    <input type="password" name="clavecopy" id="passwordcopy" placeholder="Entre 8 a 12 caracteres"
+                        required>
+                    <label for="pais" class="parrafoFomularioContacto">En que pais estas</label>
+                    <select name="" id="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                    <div class="contenedorContacto">
+                        <p class="parrafoFomularioContacto">Genero:</p>
+                        <label for="masculino" class="parrafoFomularioContactoGenero">Masculino</label>
+                        <input type="radio" id="masculino" value="genero" name="genero">
+                        <label for="femenino" class="parrafoFomularioContactoGenero">Femenino</label>
+                        <input type="radio" name="genero" id="femenino" value="genero">
+                        <label for="otro" class="parrafoFomularioContactoGenero">Otro</label>
+                        <input type="radio" id="otro" value="genero" name="genero">
+                    </div>
+                    <label for="fechanacimiento" class="parrafoFomularioContacto">Fecha de Nacimiento:</label>
+                    <input type="date" name="nacimiento" id="fechanacimiento" placeholder="dd/mm/aaaa">
+                    <div class="contenedorContacto">
+                        <label for="privacidad" class="parrafoLegales">He leído y entendido las condiciones de uso y
+                            protección de datos y mis
+                            preferencias de privacidad</label>
+                        <input type="checkbox" name="acuerdo" id="privacidad" required>
+                    </div>
+                </fieldset>
+                <input type="reset" value="Cancelar" class="botonesContacto transition fondoVerde">
+                <input type="submit" value="Enviar" class="botonesContacto transition fondoVerde">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="parrafoFooter">Seguinos en:</p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../image/facebook.png"
+                    alt="link a la pagina de Facebook" class="logoFooter">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../image/Instagram-icon.png" alt="link a la pagina de Instagram" class="logoFooter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../image/twitter.png" alt="link a la pagina de Twitter" class="logoFooter">
+        </section>
+    </footer>
+    <!-- Final del footer-->
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

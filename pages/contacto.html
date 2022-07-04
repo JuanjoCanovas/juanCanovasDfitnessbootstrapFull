@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.png">
+    <title>DFitness Portal de Noticias Fitness</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light fondoDegrade">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../image/logof.png" alt="Logo D Fitness Index portal de noticias fitness" class="logoHeader">
+                <p class="centrado">DFITNESS</p>
+            </a>
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- boton hamburguesa -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/articulos.html">ARTICULOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/noticias.html">NOTICIAS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/tienda.html" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            TIENDA
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../pages/tienda.html#indumentaria">INDUMENTARIA</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#maquinas">MAQUINAS</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#suplementos">SUPLEMENTOS</a></li>
+                            <li><a class="dropdown-item" href="../pages/tienda.html#equipamientos">EQUIPAMIENTOS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/registracion.html">REGISTRO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Final del menu-->
+    <main class="fondoCeleste">
+        <section>
+            <article class="contenedorPresentacionContacto">
+                <h2>Somos Dfitness</h2>
+                <p class="parrafoPresentacionContacto"><em>Hacemos un portal de noticias, con el objetivo de traerte las
+                        novedades del mundo fitness.</em></p>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide col-8" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="4000">
+                            <img src="../image/compromiso.jpg" class="d-block w-100" alt="mujer entrenando">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="parrafoCarrusel">COMPROMISO</h5>
+                                <p class="parrafoCarrusel">Solo publicamos articulos con informacion comprobada.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="../image/salud.jpg" class="d-block w-100" alt="alimentos nutricionista">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="parrafoCarrusel">SALUD</h5>
+                                <p class="parrafoCarrusel">Promovemos el ejercio fisico, la alimentacion equilibrada y un estilo de vida
+                                    saludable.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="4000">
+                            <img src="../image/equilibrio.jpg" class="d-block w-100" alt="mujer meditando">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 class="parrafoCarrusel">EQUILIBRIO</h5>
+                                <p class="parrafoCarrusel">Incentivamos a verse a uno mismo como una persona valiosa, integra y equilibrada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!--Final de texto de presentacion-->
+        <section class="contenedorDatosContacto bordeArticulo">
+            <div class="contenedorContacto">
+                <img src="../image/Whatsapp-icon.png" alt="logo de Whatsapp" class="imagenDatosContacto">
+                <p class="parrafoDatosContacto"> 54 351 6119001 </p>
+            </div>
+            <div class="contenedorContacto">
+                <img src="../image/email-icon.png" alt="logo de email" class="imagenDatosContacto">
+                <p class="parrafoDatosContacto"> dfitness@gmail.com </p>
+            </div>
+        </section>
+        <!--Imagen de y datos de Contacto-->
+        <section>
+            <form action="envio.php">
+                <fieldset class="contenedorDatosContacto bordeArticulo">
+                    <legend class="parrafoFomularioContactoLegend">Mensaje para Dfitness</legend>
+                    <label for="nombre" class="parrafoFomularioContacto">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Juan Perez" required>
+                    <label for="email" class="parrafoFomularioContacto">Email:</label>
+                    <input type="email" id="email" placeholder="mail@mail.com" required>
+                    <label for="mensaje" class="parrafoFomularioContacto">Mensaje:</label>
+                    <textarea name="" id="mensaje" cols="180" rows="10" placeholder="Aqui tu mensaje"
+                        required></textarea>
+                    <div>
+                        <input type="reset" value="Cancelar" class="botonesContacto transition fondoVerde">
+                        <input type="submit" value="Enviar" class="botonesContacto transition fondoVerde">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <!-- fin de formulario de contacto-->
+    </main>
+    <footer>
+        <section class="footer">
+            <p class="parrafoFooter">Seguinos en:</p>
+            <a href="https://www.facebook.com" target="_blank"><img src="../image/facebook.png"
+                    alt="link a la pagina de Facebook" class="logoFooter">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../image/Instagram-icon.png" alt="link a la pagina de Instagram" class="logoFooter">
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../image/twitter.png" alt="link a la pagina de Twitter" class="logoFooter">
+        </section>
+    </footer>
+    <!-- Final del footer-->
+    <!-- JavaScript bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
